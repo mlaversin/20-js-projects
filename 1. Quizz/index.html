@@ -1,17 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quizz JS</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Quizz de culture générale</h1>
 
+    <div class="container-global">
 
+      <form class="form-quizz">
+
+        <div class="question-block">
+          <h4>Qui est sacré empereur de France le 2 décembre 1804 ?</h4>
+          <div>
+            <input type="radio" name="q1" id="clovis" value="a" checked />
+            <label for="clovis">Clovis</label>
+          </div>
+          <div>
+            <input type="radio" name="q1" id="charlemagne" value="b" />
+            <label for="charlemagne">Charlemagne</label>
+          </div>
+          <div>
+            <input type="radio" name="q1" id="napoleon" value="c" />
+            <label for="napoleon">Napoléon Bonaparte</label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <h4>Quelle est la date d'indépendance des États-Unis ?</h4>
+          <div>
+            <input type="radio" id="date1" name="q2" value="a" checked />
+            <label for="date1">4 juillet 1776</label>
+          </div>
+
+          <div>
+            <input type="radio" id="date2" name="q2" value="b" />
+            <label for="date2">4 juillet 1789</label>
+          </div>
+
+          <div>
+            <input type="radio" id="date3" name="q2" value="c" />
+            <label for="date3">4 juillet 1856</label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <h4>La chute de l'empire Romain se situe en ?</h4>
+          <div>
+            <input type="radio" id="date4" name="q3" value="a" checked />
+            <label for="date4">L'an 15 ap. J.-C.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="date5" name="q3" value="b" />
+            <label for="date5">L'an 476 ap. J.-C.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="date6" name="q3" value="c" />
+            <label for="date6">L'an -740 av. J.-C.</label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <h4>Quelle est la capitale de la Slovénie ?</h4>
+
+          <div>
+            <input type="radio" id="ljubljana" name="q4" value="a" checked />
+            <label for="ljubljana">Ljubljana</label>
+          </div>
+
+          <div>
+            <input type="radio" id="belgrade" name="q4" value="b" />
+            <label for="belgrade">Belgrade</label>
+          </div>
+
+          <div>
+            <input type="radio" id="bratislava" name="q4" value="c" />
+            <label for="bratislava">Bratislava</label>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <h4>Combien d'habitants comptait l'Irlande en 2020 ?.</h4>
+          <div>
+            <input type="radio" id="m1" name="q5" value="a" checked />
+            <label for="m1">1,365 million</label>
+          </div>
+
+          <div>
+            <input type="radio" id="m2" name="q5" value="b" />
+            <label for="m2">21 millions</label>
+          </div>
+
+          <div>
+            <input type="radio" id="m3" name="q5" value="c" />
+            <label for="m3">4,9 millions</label>
+          </div>
+        </div>
+
+        <button type="submit">Validez vos réponses !</button> 
+      </form>
+
+      <div class="results">
+          <h2>Cliquez sur valider pour voir les résultats</h2>
+            <p class="help"></p>
+            <p class="note"></p>
+      </div>
+
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
