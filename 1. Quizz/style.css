@@ -53,7 +53,7 @@ h1 {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
-.resultats h2 {
+.results h2 {
   text-align: center;
 }
 .help {
@@ -81,7 +81,7 @@ form button {
 }
 
 form button:hover {
-  background-color: rgb(184, 205, 212);
+  background-color: lightblue;
 }
 
 .fail {
