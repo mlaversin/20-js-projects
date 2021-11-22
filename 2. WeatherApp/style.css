@@ -10,3 +10,102 @@ body {
     background: linear-gradient(45deg, rgb(59,50,50), rgb(22,28,29));
     height: 100vh;
 }
+
+.container {
+    width: 800px;
+    height: 600px;
+    background: linear-gradient(45deg, #1068b6, #ec60a6);
+    display: grid;
+    grid-template: 100px 300px 100px 100px / repeat(8, 100px);
+    margin: 100px auto 0;
+    position: relative;
+    border: 1px solid #f1f1f1;
+}
+
+h1 {
+    /* start row / start col / end row / end col */
+    grid-area: 1 / 1 / 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.logo-info-block {
+    grid-area: 2 / 1 / 3 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-block {
+    width: 50%;
+}
+.logo-block img {
+    width: 100%;
+    height: auto;
+}
+.info-block {
+    width: 50%;
+}
+.info-block .temps {
+    font-size: 40px;
+}
+.info-block .temps::first-letter {
+    text-transform: capitalize;
+}
+.info-block .temperature {
+    font-size: 60px;
+}
+.info-block .location {
+    font-size: 40px;
+    word-wrap: break-word;
+}
+
+.hour-forecast-block {
+    grid-area: 3 / 1 / 4 / -1;
+}
+.day-forecast-block {
+    grid-area: 4 / 1 / 5 / -1;
+}
+.day-forecast-block, .hour-forecast-block {
+    display: grid;
+    grid-template: 100px / repeat(7, 1fr);
+}
+
+.h-block, .d-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #f1f1f1;
+    font-size: 21px;
+}
+
+.h-block:not(:last-child), .d-block:not(:last-child) {
+    border-right: 1px solid #f1f1f1;
+}
+
+.h-block p, .d-block p {
+    margin: 5px;
+}
+
+/* Animation chargement */
+
+.overlay-loading-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(59,50,50), rgb(22,28,29));
+    transition: opacity 1.1s ease-out;
+    z-index: 1000;
+}
+.overlay-loading-icon img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.disappearance {
+    opacity: 0;
+}
