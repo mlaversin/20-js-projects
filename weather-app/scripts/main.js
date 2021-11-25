@@ -1,6 +1,7 @@
 import OrderedDays from './utilities/timeManagement.js';
+require('dotenv').config();
 
-const apiKey = '069d4dd7d25690f64ea6beb3293ab365';
+const apiKey = process.env.API_KEY;
 let apiResults;
 
 const weather = document.querySelector('.weather');
